@@ -4,8 +4,6 @@ ENV LANG C.UTF-8
 
 RUN apk --update add --no-cache \
 	nodejs npm python3 py3-pip alpine-sdk libcap bluez bluez-dev eudev-dev
-
-FROM $BUILD_FROM AS RUNNING
 RUN setcap cap_net_raw+eip $(eval readlink -f $(which node))
 
 WORKDIR /
