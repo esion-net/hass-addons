@@ -3,7 +3,7 @@
     <v-app-bar color="blue" app dense>
       <v-app-bar-nav-icon v-on:click="goHome">
         <v-icon v-if="!isHome">mdi-arrow-left</v-icon>
-        <v-icon v-else>mdi-square</v-icon>
+        <v-icon v-else>mdi-bluetooth</v-icon>
       </v-app-bar-nav-icon>
       <v-toolbar-title>TTLock integration</v-toolbar-title>
 
